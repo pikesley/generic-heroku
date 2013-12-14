@@ -1,9 +1,12 @@
 require 'sinatra/base'
+require 'haml'
 
 class GenericHeroku < Sinatra::Base
   get '/' do
     name = request.host.sub(/^www\./, '')
-    name
+    haml :index, :locals => {
+        :title => name
+    }
   end
 
   # start the server if ruby file executed directly
