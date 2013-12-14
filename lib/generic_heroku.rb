@@ -5,8 +5,8 @@ class GenericHeroku < Sinatra::Base
   get '/' do
     name = request.host.sub(/^www\./, '')
     haml :index, :locals => {
-        :title           => name,
-        :bootstrap_theme => 'http://bootswatch.com/amelia/bootstrap.min.css'
+        :title           => name
+#        :bootstrap_theme => 'http://bootswatch.com/amelia/bootstrap.min.css'
     }
   end
 
