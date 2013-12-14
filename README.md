@@ -1,4 +1,7 @@
 [![Build Status](https://travis-ci.org/pikesley/generic-heroku.png?branch=master)](https://travis-ci.org/pikesley/generic-heroku)
+[![Dependency Status](https://gemnasium.com/pikesley/generic-heroku.png)](https://gemnasium.com/pikesley/generic-heroku)
+[![Code Climate](https://codeclimate.com/github/pikesley/generic-heroku.png)](https://codeclimate.com/github/pikesley/generic-heroku)
+[![Coverage Status](https://coveralls.io/repos/pikesley/generic-heroku/badge.png)](https://coveralls.io/r/pikesley/generic-heroku)
 
 I'm trying to get off of my VPS, which means moving my self-hosted stuff onto Heroku. I own a _lot_ of domains that are currently idle, so this is a catch-all for them.
 
