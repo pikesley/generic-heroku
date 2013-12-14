@@ -10,3 +10,4 @@ Feature: provide a generic holding page for Sam's untold unused domains
    Given I have set the "Host" header to "www.fake.org"
    And I am on the home page
    Then I should see "fake.org"
+   And I should see "a property of pikesley.org"
