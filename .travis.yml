@@ -1,0 +1,8 @@
+language: ruby
+rvm:
+- 2.0.0
+deploy:
+  provider: heroku
+  app: shielded-tundra-1656
+  api_key:
+    secure: FZD2LCLhWMxO5smRWh/5Kylkg8RtdwbXENHYoj5+KH19eRYhNpNoswxtof0ttvulmj7jXSSy+MLr82RhSwWN9YdvMsMJVZtGo/CMNkeMhGbIS+2mP0K0NtZFFcF9aZV2uml/XjsWqjczHfgLLAW1ljDL7bV6iL5ZX5YmeZNRoRQ=
