@@ -8,7 +8,7 @@ class GenericHeroku < Sinatra::Base
   ]
   get '/' do
     name          = request.host.sub(/^www\./, '')
-    show_property = @@not_properties.any? { |i| i =~ /#{name}/ }
+    show_property = @@not_properties.any? { |i| i !~ /#{name}/ }
     haml :index, :locals => {
         :title           => name,
         :bootstrap_theme => 'http://bootswatch.com/amelia/bootstrap.min.css',
