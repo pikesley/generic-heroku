@@ -2,11 +2,17 @@ require 'sinatra/base'
 require 'haml'
 
 class GenericHeroku < Sinatra::Base
+  @@not_properties = [
+      'andrewnormanbaillie.org',
+      'maggiebaillie.org'
+  ]
   get '/' do
-    name = request.host.sub(/^www\./, '')
+    name          = request.host.sub(/^www\./, '')
+    show_property = @@not_properties.any? { |i| i =~ /#{name}/ }
     haml :index, :locals => {
         :title           => name,
-        :bootstrap_theme => 'http://bootswatch.com/amelia/bootstrap.min.css'
+        :bootstrap_theme => 'http://bootswatch.com/amelia/bootstrap.min.css',
+        :show_property   => show_property
     }
   end
 

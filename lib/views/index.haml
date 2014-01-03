@@ -12,9 +12,10 @@
       .container
         .jumbotron
           %h1= title
-          %p.pull-right
-            a property of
-            %a{:href => "http://sam.pikesley.org/"}pikesley.org
+          -if show_property
+            %p.pull-right
+              a property of
+              %a{:href => "http://sam.pikesley.org/"}pikesley.org
 
     %footer
       %p.text-center
