@@ -4,7 +4,8 @@ require 'haml'
 class GenericHeroku < Sinatra::Base
   @@not_properties = [
       'andrewnormanbaillie.org',
-      'maggiebaillie.org'
+      'maggiebaillie.org',
+      'csvlint.io'
   ]
   get '/' do
     name          = request.host.sub(/^www\./, '')
