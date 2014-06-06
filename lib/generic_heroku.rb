@@ -5,6 +5,7 @@ class GenericHeroku < Sinatra::Base
   @@not_properties = [
       'andrewnormanbaillie.org',
       'maggiebaillie.org',
+      'chloecutter.me',
       'csvlint.io'
   ]
   get '/' do
