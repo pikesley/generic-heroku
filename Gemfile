@@ -12,6 +12,7 @@ gem 'haml'
 gem 'kramdown'
 gem 'activesupport'
 gem 'rack-google-analytics'
+gem 'badgerbadgerbadger'
 
 group :test do
   gem 'capybara-webkit'
